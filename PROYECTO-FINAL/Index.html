@@ -2,7 +2,13 @@
 <html> <!--'ETIQUETA ' -->
 <head><!--'ETIQUETA HEAD' con esta etiqueta colocamos el encabezado de nuestra pagina-->
   <link rel="stylesheet" type="text/css" href="css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/General.css"><!--'ETIQUETA LINK'con esto vinculamos la hoja css que dara estilos por su direccion de ruta-->
+
+
+    <link rel="stylesheet" type="text/css" href="C:\PROYECTO3A\AreaRecursos\PROYECTO-FINAL\css\General.css"><!--'ETIQUETA LINK'con esto vinculamos la hoja css que dara estilos por su direccion-->
+    <script src="C:\PROYECTO3A\AreaRecursos\PROYECTO-FINAL\ScriptsFuncionalesJavaScript\ConfiguracionEstandar.js"></script>
+	<link id="URLIDTEMA" rel="stylesheet" type="text/css" href=""> <!--'ETIQUETA LINK'con esto vinculamos la hoja css que dara estilos por su direccion de ruta-->
+
+	
 	<title>INDICE</title><!--'ETIQUETA TITLE 'con esto titulamos la pagina en la direccion url*/-->
 
 </head>
@@ -10,42 +16,41 @@
 
 
     <!-------------------------------MENU DE NAVEGACION------------------------------------>
-    <div>
-      <nav id="BARRA">
-      <ul id="MENU">
+
+<!-- Plantilla temporal -->
+ <nav class="BARRA">
+      <ul class="MENU">
   
-          <li><a href="#">Ajustes</a>  
+          <li><a href="#">Configuraciones</a>  
         <ul class="SUBMENU">
-        <li><a href="">Tema Claro</a></li>
-        <li><a href="">Tema Neon</a></li>
+		<li><a href="?ClaveTemaURL=TemaGeneral">Tema Predeterminado</a></li>
+        <li><a href="?ClaveTemaURL=TemaClaro">Tema Claro</a></li>
+        <li><a href="?ClaveTemaURL=TemaOscuro">Tema Oscuro</a></li>
         </ul>
         </li>
-        <li><a id="INICIO" href="Index.html">Pagina Principal</a></li>
-          
+        <li><a class="INICIO"  href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/index.html">Pagina Principal</a></li>
+        <li><a class="INICIO"  href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/QuejasSugerencias.html">Quejas y sugerencias</a></li>
+		<li><a class="INICIO"  href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/InfoAcercaDelAutor.html">Acerca de ...</a></li> 
   
         </ul>
     </nav>
-    </div>
+
+
     <!-----------------------------FIN DEL MENU SUPERIOR---------------------------------->
     <br>
-	<p class="B1" style="position: relative;">  - - - - - Bienvenido - - - - - </p>
-	<br>
-
-<div>
+	<p class="BIENVENIDO" style="position: relative;">   -  -  -  -  Bienvenido  -  -  -  -    </p>
+   
 	<p>Informacion Importante: este sitio busca servir como una especie de portafolio dinamico que muestre los temas que conoce el autor de este sitio por lo que es muy probable que mas adelante se actualizarce o agregue mas contenido
 		<br>
 		  Instrucciones : Seleccione la imagen del area de estudio que mas le llame la atencion 
 		</p>
-	  </div>
+	  
+	  <br>
 <!-----------------------------AREAS DE LA COMPUTACION---------------------------------->			
 
-<h1 class="SeccionAzulComputacion">La Computacion</h1>
-
-	
-
-
+<div class="GaleriaEstandar1">
+<h1>La Computacion</h1>
 <!--Galeria De Menu -->
-
 <div class="ContenedorDeslizable1">
 	<div id="carouselExampleIndicators1" class="carousel slide">
 	  <div class="carousel-indicators">
@@ -58,32 +63,32 @@
 	  </div>
 	  <div class="carousel-inner">
 		<div class="carousel-item active">
-		  <a href="Computacion/HTML5CSS3/GestorHTML5CSS3.html" >
+		  <a  class="INICIO" href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/SitioEnConstruccion.html" >
 		  <img  src="Imagenes/SeccionCSS.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 		  </a>
 		</div>
 		<div class="carousel-item">
-		  <a href="Computacion/HTML5CSS3/GestorHTML5CSS3.html" >
+		  <a class="INICIO" href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/SitioEnConstruccion.html" >
 		  <img src="Imagenes/SeccionHTML.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 		  </a>
 		</div>
 		<div class="carousel-item">
-		  <a href="Computacion/HTML5CSS3/GestorHTML5CSS3.html" >
+		  <a class="INICIO" href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/SitioEnConstruccion.html" >
 		  <img src="Imagenes/SeccionMySQL.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 		  </a>
 		</div>
 		<div class="carousel-item">
-			<a href="Computacion/HTML5CSS3/GestorHTML5CSS3.html" >
+			<a class="INICIO" href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/SitioEnConstruccion.html" >
 			<img src="Imagenes/SeccionCSHARP.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 			</a>
 		  </div>
 		  <div class="carousel-item">
-			<a href="Computacion/HTML5CSS3/GestorHTML5CSS3.html" >
+			<a class="INICIO" href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/SitioEnConstruccion.html" >
 			<img src="Imagenes/SeccionJAVA.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 			</a>
 		  </div>
 		  <div class="carousel-item">
-			<a href="Computacion/HTML5CSS3/GestorHTML5CSS3.html" >
+			<a class="INICIO" href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/SitioEnConstruccion.html" >
 			<img src="Imagenes/SeccionOFFICE.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 			</a>
 		  </div>
@@ -98,20 +103,16 @@
 	  </button>
 	</div>
 	</div>
-	
-
-
-
+</div>	
 <!-----------------------------FIN DE LAS AREAS DE LA COMPUTACION---------------------------------->
 
 
 <!-----------------------------AREAS DE LA FISICA Y MATEMATICA---------------------------------->			
 
-<br>
-<h1 class="SeccionAzulComputacion">La Fisica y Matematica</h1>
-	
+<br><br>
+<div class="GaleriaEstandar1">
+<h1>La Fisica y Matematica</h1>
 <!--Galeria De Menu -->
-
 <div class="ContenedorDeslizable1">
 	<div id="carouselExampleIndicators2" class="carousel slide">
 	  <div class="carousel-indicators">
@@ -120,22 +121,14 @@
 	  </div>
 	  <div class="carousel-inner">
 
-
-
-
-	
-
-
-
-
 		<div class="carousel-item active">
-		  <a href="FisicoMatematica/ECUACIONESDIFERENCIALES/GestorEcuacionesDiferenciales.html" >
-		  <img  src="Imagenes/SeccionEcuacionesDiferenciales.png" class="ImagenDeslizable3" alt="Imagen No Cargada">
+		  <a class="INICIO" href="FisicoMatematica/ECUACIONESDIFERENCIALES/GestorEcuacionesDiferenciales.html" >
+		  <img  src="Imagenes/SeccionEcuacionesDiferenciales.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 		  </a>
 		</div>
 		<div class="carousel-item">
-		  <a href="Computacion/HTML5CSS3/GestorHTML5CSS3.html" >
-		  <img  src="Imagenes/SeccionDinamica.png" class="ImagenDeslizable3" alt="Imagen No Cargada">
+		  <a class="INICIO" href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/SitioEnConstruccion.html" >
+		  <img  src="Imagenes/SeccionDinamica.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 		  </a>
 		</div>
 	
@@ -150,7 +143,7 @@
 	  </button>
 	</div>
 	</div>
-	
+</div>	
 
 
 
@@ -158,12 +151,11 @@
 
 
 <!-----------------------------AREAS DE LA ROBOTICA INDUSTRIAL---------------------------------->			
-<br>
-<h1 class="SeccionAzulComputacion">La Robotica Industrial</h1>
+<br><br>
 
-
+<div class="GaleriaEstandar1">
+<h1>La Robotica Industrial</h1>
 <!--Galeria De Menu -->
-
 <div class="ContenedorDeslizable1">
 	<div id="carouselExampleIndicators3" class="carousel slide">
 	  <div class="carousel-indicators">
@@ -173,14 +165,11 @@
 	  </div>
 	  <div class="carousel-inner">
 		<div class="carousel-item active">
-		  <a href="Computacion/HTML5CSS3/GestorHTML5CSS3.html" >
-		  <img  src="Imagenes/SeccionFreCAD.png" class="ImagenDeslizable2" alt="Imagen No Cargada">
+		  <a class="INICIO" href="/PROYECTO3A/AreaRecursos/PROYECTO-FINAL/SitioEnConstruccion.html" >
+		  <img  src="Imagenes/SeccionFreCAD.png" class="ImagenDeslizable1" alt="Imagen No Cargada">
 		  </a>
 		</div>
 		
-	
-		
-		 
 	
 	  </div>
 	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
@@ -193,27 +182,15 @@
 	  </button>
 	</div>
 	</div>
-	
-
-	
-
+</div>	
 <!-----------------------------FIN DE LAS AREAS DE LA ROBOTICA INDUSTRIAL---------------------------------->
 
 
-
-
-
-
-
-
-
-
-
-<!-- -----------------------------------------------PIE DE https://github.com/PANDATHEDESTROYER/AreaRecursosPAGINA------------------------------------------------------ -->
+<!-- -----------------------------------------------PIE DE PAGINA------------------------------------------------------ -->
 <br>
-<footer id="DMCEM">Elaborado Por : Dominguez Marquez Carlos Eduardo Mizraim &#169 (Fecha De Lanzamiento 26/08/2025) Version Beta 1.0</footer>
-	
+<footer id="PIEDEPAGINA">Autor : Dominguez Marquez Carlos Eduardo Mizraim &#169 Version Beta 1.2</footer>
 <script src="css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<br>
 </div>
 </body>
 </html>

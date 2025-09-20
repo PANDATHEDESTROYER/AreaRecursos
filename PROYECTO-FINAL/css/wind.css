@@ -1,0 +1,140 @@
+body
+{
+    background-image: url(../Imagenes/fondowindosxp.png);
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+
+}
+
+
+/*-------------------------------------------Barra De Inicio-----------------------------------------------*/
+
+.BarWin /*Busca el id BARRA Aplicara estilos solo a la barra*/
+{
+
+
+ position: fixed; /* O position: absolute; */
+        bottom: 0;
+  font-size-adjust: 200px; /*Estilo que nos permite ajustar el tamano de la fuente*/
+  width: 100%;  /*Estilo que nos permite aplicar el ancho de objeto el ancho de la barra abarcara el 80% de la pantalla*/
+  background-color: rgb(20,20,30);/*Estilo de color de fondo rgb*/ 
+  border-style: solid;
+  border-color: rgb(255,255,255);
+  border-width: 1px;
+
+}
+.BarWin ul /*Busca la etiqueta ul dentro de el id barra*/
+{
+
+  list-style-type: none;
+  margin: 2px; 
+ text-align: center;
+  padding: 1px; /*Estilo de relleno que crea una distancia entre el elemtno*/
+  margin : auto;
+}
+.Iconos > li /*Busca dentro del id MENU la etiqueta li*/
+{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+    
+}
+.Iconos >li > a /**/
+{
+  display: block;
+  text-decoration: none;
+  padding: 10px 10px;
+  background-color: rgb(20,20,30);/*Estilo de color de fondo rgb*/
+}
+.Iconos li a:hover
+{
+  background-color: rgb(45,45,55);
+  color: black;
+  text-decoration: none;
+  transition: 0s;
+}
+
+.BarWin li:hover .PaginaPrincipal
+{
+  visibility: visible;
+  opacity: 2;
+}
+.PaginaPrincipal /*Busca el id INICIO*/
+{
+
+  background-color: rgb(0,0,0); /*Estilo de color de fondo*/
+  font-style: bold; /*Estilo de fuente cambia el estilo de la letra */
+}
+
+/*---------------------------Encabezado Bienvenido ----------------------------*/
+/*---------------------------Archivos ----------------------------*/
+.Carpetas
+{
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: rgb(79, 85, 102);
+  margin-left: 35%;
+  margin-top: 10%;
+
+}
+.CarpetasCont
+{
+  position: relative;
+  width: 80%;
+  height: 85%;
+  border-radius: 5px;
+  background-color: rgb(79, 85, 102);
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+
+}
+
+/*---------------------------Configuracion ----------------------------*/
+.Configuracion
+{
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: rgb(79, 85, 102);
+  margin-left: 35%;
+  margin-top: 10%;
+
+}
+.ConfiguracionCont
+{
+  position: relative;
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgb(79, 85, 102);
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+/*---------------------------Menu ----------------------------*/
+.Menu
+{
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: rgb(79, 85, 102);
+  margin-left: 35%;
+  margin-top: 10%;
+
+}
+.MenuCont
+{
+  position: relative;
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgb(79, 85, 102);
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}

@@ -1,0 +1,351 @@
+/*
+* (Selector Universal) selecciona todos los elementos del archivo html y aplica el estilo a toda la pagina si es que no hay otro estilo despues de este
+body  (Selector De Etiqueta Body) busca la etiqueta body en nuestro archivo html y da estilo segun lo que coloquemos dentro de las llaves
+
+Selector universal             sintaxis                 *{ Estilos  }
+Selector de tipo               sintaxis                 [Nombre de la etiqueta] { Estilos }
+Selector de clase              sintaxis                .[Nombre De La Clase] {Estilos} 
+Selector de ID                 sintaxis                #[Id] {Estilos}
+Selector de pseudo-clase       sintaxis                [Nombre de la etiqueta,Nombre De La Clase o Id] : [pseudo-clase]
+
+Tipos De pseudo-clase [Hover(Flotante Sobre El Elmento), Active (Evento activacion como click)] 
+
+
+Posicionamientos
+
+static     posicona predeterminada de los elementos web
+relative   posiciona apartir de su punto orgien static
+fixed      posicion apartir de la pantalla
+Absolute   posicion relativa al contenedor
+
+
+
+
+
+/*-------------------------------------------MENU-----------------------------------------------*/
+
+.BARRA /*Busca el id BARRA Aplicara estilos solo a la barra*/
+{
+ position: static;
+  font-size-adjust: 200px; /*Estilo que nos permite ajustar el tamano de la fuente*/
+  width: 100%;  /*Estilo que nos permite aplicar el ancho de objeto el ancho de la barra abarcara el 80% de la pantalla*/
+  background-color: rgb(255,255,255);/*Estilo de color de fondo rgb*/ 
+  border-style: solid;
+  border-color: rgb(0,0,0);
+  border-width: 1px;
+}
+.BARRA ul /*Busca la etiqueta ul dentro de el id barra*/
+{
+
+  list-style-type: none;
+  margin: 1px; 
+  margin-left: 0%; /*Margen izquierdo del 15 porciento de la longitud total de cada menu con relacion al submenu*/
+  padding: 1px; /*Estilo de relleno que crea una distancia entre el elemtno*/
+  margin : auto;
+}
+.MENU > li /*Busca dentro del id MENU la etiqueta li*/
+{
+  position: relative;
+  display: inline-block;
+}
+.MENU >li > a /**/
+{
+  display: block;
+  color: rgb(60, 60, 60);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  background: rgb(205,205,205);
+}
+.MENU li a:hover
+{
+  background-color: rgb(255,255,255);
+  color: black;
+  text-decoration: none;
+  transition: 0s;
+}
+.SUBMENU
+{
+  position: absolute;
+  width: 100%;
+  background-color:  rgb(205,205,205);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.SUBMENU li a /*Busca la clase SUBMENU y dentro de ella entra a las etiqueta li y finalmente busca dentro de li la etiqueta a y aplica el estilo*/
+{
+  display: block;
+  padding: 11px;
+  color: rgb(60, 60, 60);
+  text-decoration: none;
+  border-style: solid;
+  border-color: rgb(255,255,255);
+  border-width: 1px;
+}
+.MENU li:hover .SUBMENU
+{
+  visibility: visible;
+  opacity: 2;
+}
+.INICIO /*Busca el id INICIO*/
+{
+
+  background-color: rgb(0,0,0); /*Estilo de color de fondo*/
+  font-style: bold; /*Estilo de fuente cambia el estilo de la letra */
+}
+
+/*---------------------------Encabezado Bienvenido ----------------------------*/
+ .BIENVENIDO
+{
+  color: rgb(60, 60, 60);
+  width: 80%;
+  margin-top: 2%;
+  margin-left:10%; /*Aplica margen del lado izquierdo en este caso la dimencion del margen se dio en px(100 pixeles)*/ 
+  margin-right:10%; /*Aplica margen del lado derecho en este caso la dimencion del margen se dio en px(100 pixeles)*/
+  text-align-last: center;
+  border-style: solid;
+ background-color: rgb(220,220,220);
+ border-width: 1px;
+ border-color: black;
+  transition: 0.7s;
+
+}
+.BIENVENIDO:hover
+{
+  border-width: 0px;
+  color: white;
+  background: rgb(5, 5, 5, 0.8);
+  box-shadow: 0 0 25px rgb(5, 5, 5),0 0 25px rgb(5, 5, 5),0 0 25px rgb(5, 5, 5);
+  /*observese que en un fondo oscuro la sombra si adquiere un color claro puede dar apariencia de iluminacion*/
+}
+
+
+/*-------------------------------Seccion De Todo El Cuerpo HTML ----------------------------*/
+ body 
+ {
+  
+ 
+
+  background-image: url(../Imagenes/FondoClaro.jpg);
+  background-size: cover;
+ 
+  
+ 	 /* background: rgb(0, 0, 0);/*backgruund aplica un estilo de color fondo y el  rgb le da el color con base a una norma rgb */
+ }
+ div
+ {
+  position: relative;
+ }
+
+ /*--------------------------------------------Introduccion Y Bienenida-----------------------------------------------------*/
+
+ h1
+ {
+ border-style: solid; /*Estilo que aplica un borde de color solido aqui no especificamos el color sino que sera solido*/
+ color:rgb(90,90,90);  /*con el comando color le damos el color y con rgb mediante la sintaxi (x,x,x) le damos el color deseado*/
+ font-size: 100%; /*Estilo tamano de fuente este aplica un incremento en las dimenciones del texto en un 130% con respento al tamano por defecto*/
+ background: rgb(250, 250, 250 ); /*Estilo de color de fondo*/
+  text-align: center;
+  border-width: 1px;
+  padding: 5px 5px; /*Estilo de relleno de 5 distancia entre derecha e izquierda 5 entre arriba y abajo*/
+  margin-left:5%; /*Aplica margen del lado izquierdo en este caso la dimencion del margen se dio en px(100 pixeles)*/ 
+  margin-right: 5%; /*Aplica margen del lado derecho en este caso la dimencion del margen se dio en px(100 pixeles)*/
+ }
+
+/*------------------------------------------Secciones De Estudio-----------------------------------*/
+p /*(Selector De Etiqueta P) busca la etiqueta p en nuestro archivo html y le da estilos segun lo que coloquemos dentro de las llavas*/
+ {
+    
+  background: rgb(255, 255, 255, 0.6);
+  color:rgb(55, 55, 55);
+  padding: 10px 10px;
+  box-shadow: 0 0 3px rgb(55, 55, 55),0 0 3px rgb(55, 55, 55),0 0 3px rgb(55, 55, 55);
+  margin-left:10%; /*Aplica margen del lado izquierdo en este caso la dimencion del margen se dio en px(100 pixeles)*/ 
+  margin-right:10%; /*Aplica margen del lado derecho en este caso la dimencion del margen se dio en px(100 pixeles)*/
+
+ } 
+ article /*(Selector De Etiqueta Article) busca la etiqueta article en nuestro archivo html y le da estilos segun lo que coloquemos dentro de la llaves*/
+ {
+ color:rgb(155,155,155);
+ }
+
+.GaleriaEstandar1  /*(Selector De Etiqueta P) busca la etiqueta p en nuestro archivo html y le da estilos segun lo que coloquemos dentro de las llavas*/
+ {
+    
+  font-size: 100%;    
+  color:rgb(1, 217, 255);
+  padding: 10px 10px;
+  box-shadow: 0 0 1px rgb(50, 50, 50),0 0 1px rgb(50, 50, 50),0 0 1px rgb(50, 50, 50);
+  margin-left:10%; /*Aplica margen del lado izquierdo en este caso la dimencion del margen se dio en px(100 pixeles)*/ 
+  margin-right:10%; /*Aplica margen del lado derecho en este caso la dimencion del margen se dio en px(100 pixeles)*/
+  background: rgb(0, 0, 0, 0.2);
+ } 
+ article /*(Selector De Etiqueta Article) busca la etiqueta article en nuestro archivo html y le da estilos segun lo que coloquemos dentro de la llaves*/
+ {
+ color:rgb(155,155,155);
+ }
+
+/* ------------------------------------------Contenedor Menu Deslizable1----------------------------------------- */
+
+.ContenedorDeslizable1
+{
+ position: relative;
+ width: 90%;
+ height: 85%;
+ margin-left: 5%;
+ margin-right: 5%;
+ border: 1px;
+ border-style: solid;
+ border-color: rgb(5, 5, 5);
+}
+
+.ImagenDeslizable1
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+.ContenedorDeslizable1 :hover
+{
+  transition: 2s;
+  opacity: 0.8;
+  box-shadow: 0 0 5px rgb(0, 217, 255 ),0 0 5px rgb(0, 217, 255 ),0 0 5px rgb(0, 217, 255);
+}
+/* ------------------------------------------Fin Del Menu Deslizable----------------------------------------- */
+
+.GENERAL01 /*(Selector De Clase) busca el nombre de la clase y si lo encuentra aplica el estilo segun lo que se halle en las llaves ejemplo class="Xnombre"*/
+{
+  background: rgb(2,0,108);
+}
+
+
+/*----------------------------------------------------------------- Imagen De Sitio En Construccion -----------------------------------------------------------*/
+
+.ConstruccionGatoMeme
+{
+  text-align: center;
+ position: relative;
+ width: 80%;
+ height: 75%;
+ margin-left: 10%;
+ margin-right: 10%;
+ border: 1px;
+ border-style: solid;
+ border-color: rgb(255, 255, 255);
+}
+
+.ConstruccionGatoMeme :hover
+{
+  transition: 2s;
+ opacity: 0.6;
+ border-color: rgb(255, 255, 255);
+}
+
+/*-------------------------------------------MenuDelTemario-----------------------------------------------*/
+
+/*-------------------------------------------MENU-----------------------------------------------*/
+
+#BARRATEMARIO /*Busca el id BARRA Aplicara estilos solo a la barra*/
+{
+ position: static;
+  font-size-adjust: 200px; /*Estilo que nos permite ajustar el tamano de la fuente*/
+  width: 80%;  /*Estilo que nos permite aplicar el ancho de objeto el ancho de la barra abarcara el 80% de la pantalla*/
+  background-color: rgb(0,0,0);/*Estilo de color de fondo rgb*/ 
+  border-style: solid;
+  border-color: rgb(255, 0, 0);
+  border-width: 1px;
+  margin-left: 10%;
+  text-align: center;
+}
+#BARRATEMARIO ul /*Busca la etiqueta ul dentro de el id barra*/
+{
+
+  list-style-type: none;
+  margin: 2px; 
+  margin-left: 0%; /*Margen izquierdo del 15 porciento de la longitud total de cada menu con relacion al submenu*/
+  padding: 1px; /*Estilo de relleno que crea una distancia entre el elemtno*/
+  margin : auto;
+}
+#MENUTEMARIO > li /*Busca dentro del id MENU la etiqueta li*/
+{
+  position: relative;
+  display: inline-block;
+}
+#MENUTEMARIO >li > a /**/
+{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  background: rgb(10,10,10);
+}
+#MENUTEMARIO li a:hover
+{
+  background-color: rgb(255,255,255);
+  color: black;
+  text-decoration: none;
+  transition: 0s;
+}
+.SUBMENUTEMARIO
+{
+  position: absolute;
+  width: 100%;
+  background-color:  rgb(0,0,0);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.SUBMENUTEMARIO li a /*Busca la clase SUBMENU y dentro de ella entra a las etiqueta li y finalmente busca dentro de li la etiqueta a y aplica el estilo*/
+{
+  display: block;
+  padding: 11px;
+  color: rgb(255,255,255);
+  text-decoration: none;
+  border-style: solid;
+  border-color: rgb(255,255,255);
+  border-width: 1px;
+}
+#MENUTEMARIO li:hover .SUBMENU
+{
+  visibility: visible;
+  opacity: 2;
+}
+#INICIOTEMARIO /*Busca el id INICIO*/
+{
+
+  background-color: rgb(0,0,0); /*Estilo de color de fondo*/
+  font-style: bold; /*Estilo de fuente cambia el estilo de la letra */
+}
+
+/* ------------------------------------------------- Dimencion Visualizacion WORD ---------------------------------------- */ 
+.embed-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: top left;
+  width: 1000px; /* Tamaño original de la hoja */
+  height: 1400px;
+}
+
+/*------------------------------------------------PIE DE PAGINA---------------------------------*/
+
+#PIEDEPAGINA
+{
+
+  font-size: 110%;
+  color :rgb(95,95,95);
+  background: rgb(200,200,200);
+  border-style: solid;
+  border-color: rgb(5,5,5);
+  border-width: 1px;
+  padding: 5px 5px; /*Estilo de relleno de 5 distancia entre derecha e izquierda 5 entre arriba y abajo*/
+  width: 90%;
+  margin: auto;
+  text-align: center;
+
+}

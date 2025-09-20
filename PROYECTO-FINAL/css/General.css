@@ -61,7 +61,7 @@ background-color: rgb(255, 255, 255, 1.0);
 
 /*-------------------------------------------MENU-----------------------------------------------*/
 
-#BARRA /*Busca el id BARRA Aplicara estilos solo a la barra*/
+.BARRA /*Busca el id BARRA Aplicara estilos solo a la barra*/
 {
  position: static;
   font-size-adjust: 200px; /*Estilo que nos permite ajustar el tamano de la fuente*/
@@ -71,7 +71,7 @@ background-color: rgb(255, 255, 255, 1.0);
   border-color: rgb(255,255,255);
   border-width: 1px;
 }
-#BARRA ul /*Busca la etiqueta ul dentro de el id barra*/
+.BARRA ul /*Busca la etiqueta ul dentro de el id barra*/
 {
 
   list-style-type: none;
@@ -80,12 +80,12 @@ background-color: rgb(255, 255, 255, 1.0);
   padding: 1px; /*Estilo de relleno que crea una distancia entre el elemtno*/
   margin : auto;
 }
-#MENU > li /*Busca dentro del id MENU la etiqueta li*/
+.MENU > li /*Busca dentro del id MENU la etiqueta li*/
 {
   position: relative;
   display: inline-block;
 }
-#MENU >li > a /**/
+.MENU >li > a /**/
 {
   display: block;
   color: white;
@@ -94,7 +94,7 @@ background-color: rgb(255, 255, 255, 1.0);
   padding: 10px 10px;
   background: rgb(10,10,10);
 }
-#MENU li a:hover
+.MENU li a:hover
 {
   background-color: rgb(255,255,255);
   color: black;
@@ -120,12 +120,12 @@ background-color: rgb(255, 255, 255, 1.0);
   border-color: rgb(255,255,255);
   border-width: 1px;
 }
-#MENU li:hover .SUBMENU
+.MENU li:hover .SUBMENU
 {
   visibility: visible;
   opacity: 2;
 }
-#INICIO /*Busca el id INICIO*/
+.INICIO /*Busca el id INICIO*/
 {
 
   background-color: rgb(0,0,0); /*Estilo de color de fondo*/
@@ -186,13 +186,13 @@ position: relative;
 /*-------------------------------Seccion De Todo El Cuerpo HTML ----------------------------*/
  body 
  {
-  /*
-  background-image: url(../Imagenes/Fondo2.jpeg);
-  background-repeat: no-repeat;
+  
+  background-image: url(../Imagenes/FondoRustico.jpeg);
+
   background-size: cover;
-  background-attachment: fixed;
-  */
- 	 background: rgb(0, 0, 0);/*backgruund aplica un estilo de color fondo y el  rgb le da el color con base a una norma rgb */
+ 
+  
+ 	 /* background: rgb(0, 0, 0);/*backgruund aplica un estilo de color fondo y el  rgb le da el color con base a una norma rgb */
  }
  div
  {
@@ -248,36 +248,7 @@ p /*(Selector De Etiqueta P) busca la etiqueta p en nuestro archivo html y le da
  {
  color:rgb(155,155,155);
  }
-.SeccionRojaFisicaMatematica  /*(Selector De Etiqueta P) busca la etiqueta p en nuestro archivo html y le da estilos segun lo que coloquemos dentro de las llavas*/
- {
-    
-  font-size: 100%;    
-  color:rgb(255, 0, 0);
-  padding: 10px 10px;
-  box-shadow: 0 0 1px rgb(255, 0, 0),0 0 1px rgb(255, 0, 0),0 0 1px rgb(255, 0, 0);
-  margin-left:10%; /*Aplica margen del lado izquierdo en este caso la dimencion del margen se dio en px(100 pixeles)*/ 
-  margin-right:10%; /*Aplica margen del lado derecho en este caso la dimencion del margen se dio en px(100 pixeles)*/
-  background: rgb(0, 0, 0);
- } 
- article /*(Selector De Etiqueta Article) busca la etiqueta article en nuestro archivo html y le da estilos segun lo que coloquemos dentro de la llaves*/
- {
- color:rgb(155,155,155);
- }
- .SeccionVerdeRoboticaIndustrial  /*(Selector De Etiqueta P) busca la etiqueta p en nuestro archivo html y le da estilos segun lo que coloquemos dentro de las llavas*/
- {
-    
-  font-size: 100%;    
-  color:rgb(9, 255, 0);
-  padding: 10px 10px;
-  box-shadow: 0 0 1px rgb(0, 255, 98),0 0 1px rgb(0, 255, 98),0 0 1px rgb(0, 255, 98);
-  margin-left:10%; /*Aplica margen del lado izquierdo en este caso la dimencion del margen se dio en px(100 pixeles)*/ 
-  margin-right:10%; /*Aplica margen del lado derecho en este caso la dimencion del margen se dio en px(100 pixeles)*/
-  background: rgb(0, 0, 0);
- } 
- article /*(Selector De Etiqueta Article) busca la etiqueta article en nuestro archivo html y le da estilos segun lo que coloquemos dentro de la llaves*/
- {
- color:rgb(155,155,155);
- }
+
 /* ------------------------------------------Contenedor Menu Deslizable1----------------------------------------- */
 
 .ContenedorDeslizable1
@@ -307,94 +278,20 @@ p /*(Selector De Etiqueta P) busca la etiqueta p en nuestro archivo html y le da
   box-shadow: 0 0 5px rgb(0, 217, 255 ),0 0 5px rgb(0, 217, 255 ),0 0 5px rgb(0, 217, 255);
 }
 /* ------------------------------------------Fin Del Menu Deslizable----------------------------------------- */
-/* ------------------------------------------Contenedor Menu Deslizable2----------------------------------------- */
-
-.ContenedorDeslizable2
-{
- position: relative;
- width: 80%;
- height: 75%;
- margin-left: 10%;
- margin-right: 10%;
- border: 1px;
- border-style: solid;
- border-color: rgb(255, 0, 0);
 
 
-}
-
-.ImagenDeslizable2
-{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  position: relative;
-
-}
-.ContenedorDeslizable2 :hover
-{
-  transition: 2s;
-  opacity: 0.8;
-  box-shadow: 0 0 5px rgb(255, 0, 0 ),0 0 5px rgb(255, 0, 0 ),0 0 5px rgb(255, 0, 0);
-}
-/* ------------------------------------------Fin Del Menu Deslizable----------------------------------------- */
-/* ------------------------------------------Contenedor Menu Deslizable3----------------------------------------- */
-
-.ContenedorDeslizable3
-{
- position: relative;
- width: 80%;
- height: 75%;
- margin-left: 10%;
- margin-right: 10%;
- border: 1px;
- border-style: solid;
- border-color: rgb(30, 255, 0);
-
-
-}
-
-.ImagenDeslizable3
-{
-  position: absolute;
-  width: 99%;
-  height: 99%;
-  position: relative;
-
-}
-.ContenedorDeslizable3 :hover
-{
-  transition: 2s;
-  opacity: 0.8;
-  box-shadow: 0 0 5px rgb(30, 255, 0),0 0 5px rgb(30, 255, 0),0 0 5px rgb(30, 255, 0);
-}
-/* ------------------------------------------Fin Del Menu Deslizable----------------------------------------- */
 
 .GENERAL01 /*(Selector De Clase) busca el nombre de la clase y si lo encuentra aplica el estilo segun lo que se halle en las llaves ejemplo class="Xnombre"*/
 {
   background: rgb(2,0,108);
 }
-/*------------------------------------------------PIE DE PAGINA---------------------------------*/
 
-#DMCEM
-{
-
-  font-size: 130%;
-  color :rgb(255,255,255);
-  background: rgb(100,100,100,0.1);
-  border-style: solid;
-  border-color: rgb(255,255,255);
-  border-width: 1px;
-  padding: 5px 5px; /*Estilo de relleno de 5 distancia entre derecha e izquierda 5 entre arriba y abajo*/
-  width: 90%;
-  margin: auto;
-
-}
 
 /*----------------------------------------------------------------- Imagen De Sitio En Construccion -----------------------------------------------------------*/
 
 .ConstruccionGatoMeme
 {
+
   text-align: center;
  position: relative;
  width: 80%;
@@ -404,6 +301,7 @@ p /*(Selector De Etiqueta P) busca la etiqueta p en nuestro archivo html y le da
  border: 1px;
  border-style: solid;
  border-color: rgb(255, 255, 255);
+ 
 }
 
 .ConstruccionGatoMeme :hover
@@ -501,3 +399,20 @@ p /*(Selector De Etiqueta P) busca la etiqueta p en nuestro archivo html y le da
   height: 1400px;
 }
 
+/*------------------------------------------------PIE DE PAGINA---------------------------------*/
+
+#PIEDEPAGINA
+{
+
+  font-size: 110%;
+  color :rgb(255, 242, 64);
+  background: rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-color: rgb(252, 255, 64);
+  border-width: 1px;
+  padding: 5px 5px; /*Estilo de relleno de 5 distancia entre derecha e izquierda 5 entre arriba y abajo*/
+  width: 90%;
+  margin: auto;
+  text-align: center;
+
+}
